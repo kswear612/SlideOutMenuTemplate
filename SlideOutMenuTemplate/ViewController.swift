@@ -10,9 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Properties
+    @IBOutlet weak var open: UIBarButtonItem!
+    @IBOutlet weak var label: UILabel!
+    
+    var varView = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Makes the open button do the reveal action
+        open.target = self.revealViewController()
+        open.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        // Recognize right swipe gesture
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        if (varView == 0) {
+            label.text = "Strings"
+        }
+        else {
+            label.text = "Others"
+        }
     }
 
     override func didReceiveMemoryWarning() {
