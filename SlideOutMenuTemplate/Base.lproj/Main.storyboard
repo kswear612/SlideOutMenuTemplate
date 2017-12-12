@@ -46,7 +46,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="MSM-sT-B5X" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="XTb-t1-dpR"/>
+                                    <segue destination="MSM-sT-B5X" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="oM5-3K-pIP"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Screen1" id="pbd-7Z-vEg">
@@ -105,7 +105,7 @@
                         <segue destination="h2d-Hk-TOT" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegueSetController" id="1qB-2X-YTw"/>
                         <segue destination="X66-DR-N9h" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegueSetController" id="IZP-Os-pkK"/>
                         <segue destination="i9r-uo-jqq" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegueSetController" id="L2T-Pq-2hL"/>
-                        <segue destination="fbf-yY-ISr" kind="relationship" relationship="rootViewController" id="8P5-iH-Tcl"/>
+                        <segue destination="IOV-ee-4Tm" kind="relationship" relationship="rootViewController" id="zzX-oM-Ax0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="meI-dD-veP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,29 +113,25 @@
             <point key="canvasLocation" x="537" y="122"/>
         </scene>
         <!--Home-->
-        <scene sceneID="d3W-Jv-SVj">
+        <scene sceneID="CzU-qd-jZI">
             <objects>
-                <viewController id="fbf-yY-ISr" customClass="Home" customModule="SlideOutMenuTemplate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HMG-Jd-Mll">
+                <viewController id="IOV-ee-4Tm" customClass="Home" customModule="SlideOutMenuTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVI-e4-2sT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3Nw-Du-gjC"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bmg-vy-KRe"/>
                     </view>
-                    <navigationItem key="navigationItem" id="25j-vB-pVT">
-                        <barButtonItem key="leftBarButtonItem" image="hamburger_icon" id="avK-39-kyW">
-                            <connections>
-                                <action selector="open:" destination="XHS-0z-Uag" id="zRM-ca-1R0"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" id="uQm-S8-oIL">
+                        <barButtonItem key="leftBarButtonItem" image="hamburger_icon" id="rFi-kU-G32"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="open" destination="avK-39-kyW" id="vQh-Kt-aZl"/>
+                        <outlet property="open" destination="rFi-kU-G32" id="WLO-Jf-3ab"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ntx-63-jBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="XHS-0z-Uag" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBA-75-efm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="122"/>
+            <point key="canvasLocation" x="1281" y="122"/>
         </scene>
         <!--Screen1-->
         <scene sceneID="Qjc-MR-YT7">
@@ -239,6 +235,6 @@
         <segue reference="IZP-Os-pkK"/>
         <segue reference="1qB-2X-YTw"/>
         <segue reference="L2T-Pq-2hL"/>
-        <segue reference="XTb-t1-dpR"/>
+        <segue reference="oM5-3K-pIP"/>
     </inferredMetricsTieBreakers>
 </document>
