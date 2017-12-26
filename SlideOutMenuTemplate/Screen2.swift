@@ -9,7 +9,7 @@
 import Foundation
 
 class Screen2: UIViewController {
-    
+     
     //MARK: Properties
     @IBOutlet weak var open: UIBarButtonItem!
 

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+ 
     //MARK: Properties
     @IBOutlet weak var open: UIBarButtonItem!
     @IBOutlet weak var label: UILabel!

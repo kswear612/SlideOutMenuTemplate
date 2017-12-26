@@ -13,7 +13,7 @@ class Screen1: UIViewController {
     //MARK: Properties
     @IBOutlet weak var open: UIBarButtonItem!
     
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         // Makes the hamburger menu reveal
         open.target = self.revealViewController()
         open.action = #selector(SWRevealViewController.revealToggle(_:))
