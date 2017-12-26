@@ -371,7 +371,7 @@ typedef enum
 - (void)revealController:(SWRevealViewController *)revealController willAddViewController:(UIViewController *)viewController
     forOperation:(SWRevealControllerOperation)operation animated:(BOOL)animated;
 - (void)revealController:(SWRevealViewController *)revealController didAddViewController:(UIViewController *)viewController
-    forOperation:(SWRevealControllerOperation)operation animated:(BOOL)animated;
+    forOperation:(SWRevealControllerOperation)operation animated:(BOOL)animated; 
 
 // Support for custom transition animations while replacing child controllers. If implemented, it will be fired in response
 // to calls to 'setXXViewController' methods

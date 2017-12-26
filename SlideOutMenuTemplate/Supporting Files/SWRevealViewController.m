@@ -1628,7 +1628,7 @@ const int FrontViewPositionNone = 0xff;
     CGRect frame = view.bounds;
     
     UIView *controllerView = controller.view;
-    controllerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    controllerView.autoresizingMask = UIViewAutoresizingFlexibleWidth |  UIViewAutoresizingFlexibleHeight;
     controllerView.frame = frame;
     
     if ( [controllerView isKindOfClass:[UIScrollView class]] )
